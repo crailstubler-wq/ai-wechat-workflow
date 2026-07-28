@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# 凭据 / 密钥（切勿提交）
+.env
+.env.*
+*.credentials.yaml
+*.credentials.yml
+*.token
+
+# Python
+__pycache__/
+*.pyc
+
+# 编辑器
+.idea/
+.vscode/
