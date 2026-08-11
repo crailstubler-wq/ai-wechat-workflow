@@ -22,20 +22,22 @@ ai-wechat-workflow/
 ├── LICENSE                         # MIT
 ├── .gitignore
 └── docs/
-    ├── 01-workflow-v7.4.md         # 主工作流 v7.4（8 步 + 铁律 + 三塔 + 标题公式 + HTML 铁律 + 视觉体系）
-    ├── 02-multi-agent-workflow.md  # 增强版多 Agent 协作 Workflow v0.3
+    ├── 01-workflow-v8.0.md         # 主工作流 v8.0（8 步 + 三类风格桶 + 零 div 单 p + 13 项防错 + 8 月踩坑）
+    ├── 02-multi-agent-workflow.md  # 增强版多 Agent 协作 Workflow v8.0
     ├── 03-expert-team-architecture.md  # AI 内容创作专家团架构（实战案例）
     ├── 04-adlr-review-method.md    # ADLR 文档审查方法论
-    └── 05-reference-learning.md    # 经验沉淀与参考学习法
+    ├── 05-reference-learning.md    # 经验沉淀与参考学习法
+    └── 06-style-guide.md           # 写作风格指南（三类风格桶 + khazix 铁律 + 可视化层次 + 13 项防错，每日写文前对照表）
 ```
 
 ## 核心文档速览
 
-- **`docs/01-workflow-v7.4.md`** — 单 Agent 生产主流程。八步法、6 条质量铁律、选题三塔、标题质量三原则与公式池、HTML 结尾格式铁律、卡片配色规则、8 项微信兼容检查、推送技术要点与踩坑速查。
-- **`docs/02-multi-agent-workflow.md`** — 把 v7.4 做 agent 化封装与质量增强：第一性原理约束（显式注入子 agent prompt）+ 对抗式红队审查（五维）+ 主编最终质量阀。
+- **`docs/01-workflow-v8.0.md`** — 单 Agent 生产主流程。八步法、三类风格桶（热点 / 观点 / 技术，各自写作范式 + 字数 + check_prose 要求）、零 div 单 p 排版铁律 + 标准色值表、可视化层次必做清单、13 项微信兼容防错、推送技术要点与踩坑速查（IP 白名单 NAT 轮换 / 重复标题 / 翻案句返工）。
+- **`docs/02-multi-agent-workflow.md`** — 把 v8.0 做 agent 化封装与质量增强：第一性原理约束（显式注入子 agent prompt）+ 对抗式红队审查（五维）+ 主编最终质量阀。
 - **`docs/03-expert-team-architecture.md`** — 专家团成员清单、协作铁律、预设 Workflow 路由、模型选型决策表，并以一篇技术解读实战演示如何跑通。
 - **`docs/04-adlr-review-method.md`** — 用 ADLR 方法论（优先级 / 删除判定 / 一致性清单）审查工作流文档本身，可作为你自查文档漂移的工具。
 - **`docs/05-reference-learning.md`** — 如何把读者反馈与红队发现沉淀为可复用经验。
+- **`docs/06-style-guide.md`** — 每日写文前唯一对照表：三类风格桶范式 + khazix 文字铁律（标点 / 日期 / 人称 / 标题）+ 零 div 单 p 排版 + 可视化层次 8 项必做 + check_prose 硬 gate + 13 项防错。
 
 ## 适用 / 不适用
 
@@ -44,10 +46,11 @@ ai-wechat-workflow/
 
 ## 快速上手
 
-1. 读 `docs/01` 理解八步主流程。
+1. 读 `docs/01` 理解八步主流程与三类风格桶。
 2. 低频深度篇走 `docs/02` 的多 Agent 红队流程。
 3. 参考 `docs/03` 的专家团路由表调度成员。
-4. 用 `docs/04` 的自查清单审你自己的工作流文档是否漂移。
+4. 写文前先翻 `docs/06` 风格指南对照表。
+5. 用 `docs/04` 的自查清单审你自己的工作流文档是否漂移。
 
 ## 去敏声明（重要）
 
@@ -57,6 +60,7 @@ ai-wechat-workflow/
 |--------|------|
 | `<WECHAT_ID>` | 你的公众号原始 ID（如 `xxx` 格式） |
 | `<DATA_ID>` | 公众号名片 `data-id`（推送脚本自动追加名片用） |
+| `<IP_CIDR>` | 你的网络出口 IP 段（NAT 轮换时按需加白名单用） |
 | `<PROJECT_DIR>` | 你的本地项目工作目录 |
 | `<your-github-username>` | 你的 GitHub 用户名 |
 

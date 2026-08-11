@@ -51,7 +51,7 @@
 
 ## 5. 实战：用 ADLR 审查本仓库文档（去敏示例）
 
-审查对象：`01-workflow-v7.4.md`（主档）+ `02-multi-agent-workflow.md`（增强版）。
+审查对象：`01-workflow-v8.0.md`（主档）+ `02-multi-agent-workflow.md`（增强版）。
 
 | 编号 | 问题（类型） | ADLR 性质 | 修正 |
 |------|------------|-----------|------|
