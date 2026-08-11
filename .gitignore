@@ -1,0 +1,32 @@
+# === 敏感凭证与动态令牌（绝不提交）===
+config/
+.workbuddy/
+.agents/
+.firecrawl/
+.learnings/
+
+# 含真实公众号 ID / appid / 出口 IP 的文件（public 仓库严禁泄露）
+agent.md
+README.md
+工作流文档-v3.0.md
+SKILL_EVAL_kangarooking.md
+scripts/
+main.sh
+
+# 未发布内容 / 大体积生成物 / 缓存
+data/
+content/
+generated-images/
+output/
+
+# 历史卡片项目（非核心工作流，且可能含项目细节）
+social-card-*/
+ai-wechat-workflow-sync/
+
+# 系统 / 缓存
+.DS_Store
+*.swp
+*.swo
+*~
+firecrawl_api_key
+skills/firecrawl-topic-discovery/config.json
