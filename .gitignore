@@ -30,3 +30,18 @@ ai-wechat-workflow-sync/
 *~
 firecrawl_api_key
 skills/firecrawl-topic-discovery/config.json
+
+# === 通用凭据 / 环境（来自上游模板）===
+.env
+.env.*
+*.credentials.yaml
+*.credentials.yml
+*.token
+
+# Python
+__pycache__/
+*.pyc
+
+# 编辑器
+.idea/
+.vscode/
